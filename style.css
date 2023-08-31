@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+body{
+    background-color: black;
+    /* height: 100vh; */
+}
+.card{
+    
+    margin: 10vh auto 10vh;
+    /* height: 80vh; */
+    background: linear-gradient(135deg, #32a859, #3277a8);
+    width: 90%;
+    max-width: 470px;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    position: relative;
+
+}
+.search{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.search input{
+    border: 0;
+    outline: 0;
+    color: #555;
+    padding: 10px 25px;
+    height: 45px;
+    flex: 1;
+    border-radius: 30px;
+    margin-right: 16px;
+    font-size: 1.1rem;
+    color: rgb(60, 58, 58);
+}
+button {
+    border-radius: 50%;
+    height: 45px;    
+    width: 45px;
+    outline: 0;
+    border: none;
+}
+button img{
+    width: 25px;
+}
+.weather{
+    margin-block: 30px;
+}
+.weather h1 {
+    font-size: 4rem;
+    color: white;
+}
+.weather h2{
+    font-size: 2rem;
+    color: white;
+}
+.weather p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-block-start: 5px;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.col{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.imgContainer{
+    margin-right: 15px;
+}
+.imgContainer img{
+    /* width: 30%; */
+    width: 60px;
+    color: white;
+    object-fit: center;
+}
+
+.search button img{
+    padding: 0px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    /* border: 2px solid red; */
+    width: 100%;
+    left: 0;
+    background-image: linear-gradient(to right , rgb(97, 95, 95) , rgb(189, 184, 184));
+    padding-block: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@media screen and (max-width:470px) {
+    .card{
+        margin:auto; 
+        height: 100vh;
+        width: 100%;
+    }
+    p{
+        font-size: 1rem;
+
+    }
+    h1.temp{
+        font-size: 3.3rem;
+        margin-top: 10px;
+
+    }
+    h2.city{
+        font-size: 2rem;
+
+    }
+    button {
+        width: 45px;
+        height: 45px;
+    }
+    button img{
+        height: 30px;
+    }
+    .imgContainer{
+        /* width: 40px ; */
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin-right: 10px;
+    }
+    .imgContainer img{
+        width:50px;
+    }
+    .search input{
+        width: 0px; 
+        margin-right: 5px;
+    }
+}
